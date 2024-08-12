@@ -4,6 +4,21 @@
         <meta content="width=device-width , initial-scale=1" name="viewport">
         <meta name="theme-color" content="#1bbc9b" />
         <link rel="stylesheet" href="main.css">
+        <!-- Fibr Script Starts -->
+    <link rel="preconnect" href="https://fpt-client-sdk-uat.s3.us-east-1.amazonaws.com">
+    <link rel="dns-prefetch" href="https://fpt-client-sdk-uat.s3.us-east-1.amazonaws.com">
+    <script src="https://fpt-client-sdk-uat.s3.us-east-1.amazonaws.com/client/66b9e85ff55b2130cb2b6f24/client-sync.min.js"></script>
+    <script async>
+    window.fibrConfig = {pageLoad:"async"};
+    var root = document.querySelector(":root");
+    function scriptFailed () { document.querySelector(":root").style.filter = 'blur(0px)'; document.querySelector(":root").style.opacity = 1 };
+    localStorage.setItem('__fibr_current_url', window.location.href);
+    let imgStyle = document.createElement('style'); imgStyle.id = 'fibr-async-img-style'; imgStyle.innerHTML = "img { opacity: 0; }";
+    let bodyStyle = document.createElement('style'); bodyStyle.id = 'fibr-style'; bodyStyle.innerHTML = "body { opacity: 0; }";
+    document.head.appendChild(bodyStyle);
+    document.head.appendChild(imgStyle);
+    </script>
+    <!-- Fibr Script Ends -->
     </head>
     <body>
         <header class="site-header">
